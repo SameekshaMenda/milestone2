@@ -1,0 +1,22 @@
+/* OnboardingManagement.css */
+.onboarding-container {
+    padding: 20px;
+  }
+  
+  .onboarding-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .onboarding-list-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+  
+  .onboarding-list-item h3 {
+    margin: 0;
+  }
+  

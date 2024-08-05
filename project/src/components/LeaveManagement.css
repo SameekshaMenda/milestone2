@@ -1,0 +1,23 @@
+/* LeaveManagement.css */
+.leave-container {
+    padding: 20px;
+  }
+  
+  .leave-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .leave-table th, .leave-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .leave-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .leave-buttons {
+    margin-bottom: 20px;
+  }
+  

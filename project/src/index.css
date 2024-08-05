@@ -3,14 +3,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.bg-login {
-  background: url('./naturehrms.jpg') no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .login-card {
   background: rgba(255, 255, 255, 0.8);

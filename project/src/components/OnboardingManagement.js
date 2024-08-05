@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Table } from 'react-bootstrap';
 import '../index.css';
+import './OnboardingManagement.css';
 
 const OnboardingManagement = () => {
   const [employee, setEmployee] = useState('');

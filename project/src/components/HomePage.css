@@ -1,0 +1,13 @@
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  

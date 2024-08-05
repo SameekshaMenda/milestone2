@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Table, Button } from 'react-bootstrap';
 import '../index.css';
+import './LeaveManagement.css';
 
 const LeaveManagement = () => {
   const [requests, setRequests] = useState([

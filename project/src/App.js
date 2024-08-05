@@ -8,19 +8,76 @@ import LeaveManagement from './components/LeaveManagement';
 import PolicyManagement from './components/PolicyManagement';
 import EmployeeProfile from './components/EmployeeProfile';
 import OnboardingManagement from './components/OnboardingManagement';
+import EmployeeDetailPage from './components/EmployeeDetailPage'; // Add this import
 
 const App = () => {
   return (
     <div>
-      <NavigationBar />
       <Routes>
         <Route path="/" element={<LoginPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/attendance" element={<AttendanceManagement />} />
-        <Route path="/leave-management" element={<LeaveManagement />} />
-        <Route path="/policy-management" element={<PolicyManagement />} />
-        <Route path="/employee-profile" element={<EmployeeProfile />} />
-        <Route path="/onboarding" element={<OnboardingManagement />} />
+        <Route
+          path="/home"
+          element={
+            <>
+              <NavigationBar />
+              <HomePage />
+            </>
+          }
+        />
+        <Route
+          path="/attendance"
+          element={
+            <>
+              <NavigationBar />
+              <AttendanceManagement />
+            </>
+          }
+        />
+        <Route
+          path="/leave-management"
+          element={
+            <>
+              <NavigationBar />
+              <LeaveManagement />
+            </>
+          }
+        />
+        <Route
+          path="/policy-management"
+          element={
+            <>
+              <NavigationBar />
+              <PolicyManagement />
+            </>
+          }
+        />
+        <Route
+          path="/employee-profile"
+          element={
+            <>
+              <NavigationBar />
+              <EmployeeProfile />
+            </>
+          }
+        />
+        <Route
+          path="/onboarding"
+          element={
+            <>
+              <NavigationBar />
+              <OnboardingManagement />
+            </>
+          }
+        />
+        <Route
+          path="/employee/:id"
+          element={
+            <>
+              <NavigationBar />
+              <EmployeeDetailPage />
+            </>
+          }
+        />
       </Routes>
     </div>
   );
