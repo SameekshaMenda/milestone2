@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.bg-login {
+  background: url('./naturehrms.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ddd;
+}
+
+.btn-custom {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background-color: #333;
+}
+
+.card-img-left {
+  float: left;
+  margin-right: 15px;
+}
+
+.card-img-right {
+  float: right;
+  margin-left: 15px;
+}
