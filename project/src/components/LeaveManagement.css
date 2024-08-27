@@ -1,23 +1,83 @@
-/* LeaveManagement.css */
-.leave-container {
-    padding: 20px;
-  }
-  
-  .leave-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .leave-table th, .leave-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  .leave-table th {
-    background-color: #f2f2f2;
-  }
-  
-  .leave-buttons {
-    margin-bottom: 20px;
-  }
-  
+.leave-management-container {
+  margin: 20px auto;
+  width: 80%; /* Adjust width as needed */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.form-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form-container button {
+  width: fit-content;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leave-table th,
+.leave-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.leave-table th {
+  background-color: #f2f2f2;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-accept {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-reject {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Button, Container } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap'; // Removed Container import
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css'; // Custom CSS for LoginPage
 
@@ -38,7 +38,7 @@ const LoginPage = () => {
               onChange={(e) => setPassword(e.target.value)} 
             />
           </Form.Group>
-          <Button variant="primary" type="submit" className="w-100 mt-3">
+          <Button variant="secondary" type="submit" className="w-100 mt-4">
             Login
           </Button>
         </Form>

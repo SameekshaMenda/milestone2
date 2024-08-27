@@ -8,13 +8,16 @@ import LeaveManagement from './components/LeaveManagement';
 import PolicyManagement from './components/PolicyManagement';
 import EmployeeProfile from './components/EmployeeProfile';
 import OnboardingManagement from './components/OnboardingManagement';
-import EmployeeDetailPage from './components/EmployeeDetailPage'; // Add this import
+import EmployeeDetailPage from './components/EmployeeDetailPage';
+import Dashboard from './components/Dashboard';
+import Logout from './components/Logout'; // Import Logout component
 
 const App = () => {
   return (
     <div>
       <Routes>
         <Route path="/" element={<LoginPage />} />
+        
         <Route
           path="/home"
           element={
@@ -24,8 +27,19 @@ const App = () => {
             </>
           }
         />
+        
         <Route
-          path="/attendance"
+          path="/dashboard"
+          element={
+            <>
+              <NavigationBar />
+              <Dashboard />
+            </>
+          }
+        />
+        
+        <Route
+          path="/attendance-management"
           element={
             <>
               <NavigationBar />
@@ -33,6 +47,7 @@ const App = () => {
             </>
           }
         />
+        
         <Route
           path="/leave-management"
           element={
@@ -42,6 +57,7 @@ const App = () => {
             </>
           }
         />
+        
         <Route
           path="/policy-management"
           element={
@@ -51,6 +67,7 @@ const App = () => {
             </>
           }
         />
+        
         <Route
           path="/employee-profile"
           element={
@@ -60,8 +77,9 @@ const App = () => {
             </>
           }
         />
+        
         <Route
-          path="/onboarding"
+          path="/onboarding-management"
           element={
             <>
               <NavigationBar />
@@ -69,12 +87,24 @@ const App = () => {
             </>
           }
         />
+        
         <Route
           path="/employee/:id"
           element={
             <>
               <NavigationBar />
               <EmployeeDetailPage />
+            </>
+          }
+        />
+
+        {/* Add the Logout route */}
+        <Route
+          path="/logout"
+          element={
+            <>
+              <NavigationBar />
+              <Logout />
             </>
           }
         />

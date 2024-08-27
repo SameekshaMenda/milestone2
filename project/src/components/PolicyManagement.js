@@ -1,43 +1,51 @@
 import React, { useState } from 'react';
-import { Form, Button, ListGroup } from 'react-bootstrap';
-import '../index.css';
+import { Form, Button, ListGroup, Accordion } from 'react-bootstrap';
+import './PolicyManagement.css'; // Custom styling for PolicyManagement
 
 const PolicyManagement = () => {
   const [policy, setPolicy] = useState('');
   const [policies, setPolicies] = useState([
-    'Equal Opportunity Policy',
-    'Non-Discrimination Policy',
+    { name: 'Equal Opportunity Policy', details: 'Details about Equal Opportunity Policy.' },
+    { name: 'Non-Discrimination Policy', details: 'Details about Non-Discrimination Policy.' },
     // Add more sample policies as needed
   ]);
 
   const handleAddPolicy = () => {
     if (policy) {
-      setPolicies([...policies, policy]);
+      setPolicies([...policies, { name: policy, details: 'No details provided.' }]);
       setPolicy('');
     }
   };
 
   return (
-    <div>
-      <Form>
-        <Form.Group controlId="formPolicy">
-          <Form.Label>New Policy</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Enter policy"
-            value={policy}
-            onChange={(e) => setPolicy(e.target.value)}
-          />
-        </Form.Group>
-        <Button variant="custom" onClick={handleAddPolicy}>
-          Add Policy
-        </Button>
-      </Form>
-      <ListGroup className="mt-3">
-        {policies.map((policy, index) => (
-          <ListGroup.Item key={index}>{policy}</ListGroup.Item>
-        ))}
-      </ListGroup>
+    <div className="policy-management-page">
+      <div className="policy-management-card">
+        <h2>Policy Management</h2>
+        <Form className="policy-management-form">
+          <Form.Group controlId="formPolicy">
+            <Form.Label>New Policy</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Enter policy"
+              value={policy}
+              onChange={(e) => setPolicy(e.target.value)}
+            />
+          </Form.Group>
+          <Button variant="primary" className="mt-3" onClick={handleAddPolicy}>
+            Add Policy
+          </Button>
+        </Form>
+        <Accordion className="mt-3 policy-management-accordion">
+          {policies.map((policy, index) => (
+            <Accordion.Item eventKey={index.toString()} key={index}>
+              <Accordion.Header>{policy.name}</Accordion.Header>
+              <Accordion.Body>
+                {policy.details}
+              </Accordion.Body>
+            </Accordion.Item>
+          ))}
+        </Accordion>
+      </div>
     </div>
   );
 };

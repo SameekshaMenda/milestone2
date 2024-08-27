@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-//import './EmployeeDetailPage.css'; // Custom CSS for EmployeeDetailPage
+import dummyPhoto from '../assets/profile.jpeg'; // Adjust the path according to your file structure
+import './EmployeeDetailPage.css'; // Custom CSS for EmployeeDetailPage
 
 const EmployeeDetailPage = () => {
   const { id } = useParams();
@@ -8,7 +9,7 @@ const EmployeeDetailPage = () => {
   // Dummy data or fetch employee details from an API based on the ID
   const employee = {
     id,
-    photo: '/path/to/dummy-photo.jpg',
+    photo: dummyPhoto, // Use the imported image
     name: 'John Doe',
     position: 'Software Engineer',
     email: 'john.doe@example.com',

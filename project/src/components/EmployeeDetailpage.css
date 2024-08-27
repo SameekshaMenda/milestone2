@@ -1,0 +1,66 @@
+/* EmployeeDetailPage.css */
+
+.employee-detail-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .employee-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .employee-detail-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .employee-detail-info {
+    text-align: left;
+    max-width: 600px;
+  }
+  
+  .employee-detail-info h2 {
+    margin-bottom: 15px;
+  }
+  
+  .employee-detail-info p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .employee-detail-info strong {
+    display: inline-block;
+    width: 150px;
+  }
+  
+  .employee-detail-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .employee-detail-info li {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .employee-detail {
+      flex-direction: column;
+    }
+    
+    .employee-detail-photo {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .employee-detail-info {
+      max-width: 100%;
+    }
+  }
+  

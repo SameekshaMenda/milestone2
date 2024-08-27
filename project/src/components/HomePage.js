@@ -8,7 +8,7 @@ import image3 from '../assets/culture1.jpeg';
 const Home = () => {
     return (
         <Container fluid className="mt-5">
-            <h2 className="text-center mb-4">Company Details</h2>
+            <h2 className="text-center mb-4">Welcome!!!!!</h2>
 
             {/* First Image and Content aligned to the left */}
             <Row className="align-items-center mb-5 content-row justify-content-start">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Table, Button } from 'react-bootstrap';
+import { Table, Button, Form } from 'react-bootstrap';
 import '../index.css';
 import './LeaveManagement.css';
 
@@ -16,8 +16,24 @@ const LeaveManagement = () => {
   };
 
   return (
-    <div>
-      <Table striped bordered hover>
+    <div className="leave-management-container">
+      <h2>Leave Management</h2>
+      <Form className="leave-management-form">
+        <Form.Group controlId="formEmployeeName">
+          <Form.Label>Employee Name</Form.Label>
+          <Form.Control type="text" placeholder="Enter employee name" />
+        </Form.Group>
+        <Form.Group controlId="formLeaveDate">
+          <Form.Label>Leave Date</Form.Label>
+          <Form.Control type="date" />
+        </Form.Group>
+        <Form.Group controlId="formLeaveReason">
+          <Form.Label>Reason</Form.Label>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+        <Button variant="secondary" className="apply-button">Apply</Button>
+      </Form>
+      <Table bordered hover className="mt-3 leave-management-table">
         <thead>
           <tr>
             <th>Employee</th>

@@ -17,8 +17,9 @@ const OnboardingManagement = () => {
   };
 
   return (
-    <div>
-      <Form>
+    <div className="onboarding-management-container">
+      <h2>Onboarding Management</h2>
+      <Form className="onboarding-management-form">
         <Form.Group controlId="formEmployeeName">
           <Form.Label>Employee Name</Form.Label>
           <Form.Control
@@ -39,11 +40,11 @@ const OnboardingManagement = () => {
             <option>Completed</option>
           </Form.Control>
         </Form.Group>
-        <Button variant="custom" onClick={handleAddOnboarding}>
+        <Button variant="custom" className="apply-button" onClick={handleAddOnboarding}>
           Add Onboarding Task
         </Button>
       </Form>
-      <Table striped bordered hover className="mt-3">
+      <Table bordered hover className="mt-3 onboarding-management-table">
         <thead>
           <tr>
             <th>Employee</th>

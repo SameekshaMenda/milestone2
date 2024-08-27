@@ -1,0 +1,50 @@
+.dashboard-container {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+}
+.dashboard-title{
+  text-align: center;
+}
+.dashboard-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.dashboard-card {
+  background-color: #f8f9fa; /* White card background */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.large-card {
+  height: 300px; /* Increase the card height */
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.graphic-container {
+  margin-top: 20px;
+}
+
+.progress-bar-custom {
+  background-color: #343a40; /* Dark grey/black progress bar */
+}
+
+.employee-count {
+  font-size: 48px;
+  color: #343a40;
+  text-align: center;
+  margin-top: 20px;
+}
