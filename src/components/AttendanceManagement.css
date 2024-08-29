@@ -1,0 +1,28 @@
+/* AttendanceManagement.css */
+.attendance-container {
+  padding: 20px;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table th, .attendance-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.attendance-table th {
+  background-color: #f2f2f2;
+}
+
+.add-attendance-form {
+  margin-bottom: 20px;
+}
+
+.add-attendance-form input,
+.add-attendance-form select,
+.add-attendance-form button {
+  margin-right: 10px;
+}

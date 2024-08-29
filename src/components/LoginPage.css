@@ -1,0 +1,24 @@
+/* LoginPage.css */
+.login-page {
+    height: 100vh;
+    width: 100vw;
+    background: url('./home5.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-card {
+    background: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+  }
+  
+  .login-card h2 {
+    margin-bottom: 20px;
+  }
+  

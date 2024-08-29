@@ -1,0 +1,71 @@
+/* OnboardingManagement.css */
+
+.onboarding-management-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.onboarding-management-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.onboarding-management-form {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.onboarding-management-form .form-group {
+  margin-bottom: 15px;
+}
+
+.onboarding-management-form .form-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.onboarding-management-form .form-control {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.onboarding-management-form .apply-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.onboarding-management-form .apply-button:hover {
+  background-color: #555;
+}
+
+.onboarding-management-table {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.onboarding-management-table th, 
+.onboarding-management-table td {
+  padding: 15px;
+  text-align: left;
+  color: #333;
+}
+
+.onboarding-management-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.onboarding-management-table tr:hover {
+  background-color: #f7f7f7;
+}
