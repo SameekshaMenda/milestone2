@@ -1,6 +1,6 @@
 # Human Resource Management System (HRMS) 
 
-This is a ** Human Resource Management System (HRMS)** built using **React.js** and **React Bootstrap**. The system is designed to manage various HR operations such as attendance, leave, onboarding, and policy management through an intuitive and user-friendly interface.
+This is a **Human Resource Management System (HRMS)** built using **React.js** and **React Bootstrap**. The system is designed to manage various HR operations such as attendance, leave, onboarding, and policy management through an intuitive and user-friendly interface.
 
 ## 🚀 Features
 
